@@ -1,0 +1,229 @@
+/* GENERAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.top-header {
+  background: #2a5298;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO + IMAGE */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  gap: 10px;
+}
+
+.logo img {
+  height: 35px;
+  width: auto;
+  scale: 1.25;
+}
+
+/* NAVIGATION */
+.top-header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.top-header nav a:hover {
+  filter: brightness(0.6);
+}
+
+.top-header nav input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to bottom, #2a5298, #1e3c72);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e3c72;
+  color: white;
+  margin-top: 40px;
+}
+
+/* ----------------------------- */
+/* RESPONSIVE DESIGN */
+/* ----------------------------- */
+
+/* TABLETS & SMALL LAPTOPS */
+@media (max-width: 900px) {
+
+  .top-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .top-header nav a {
+    margin-left: 10px;
+    font-size: 0.95rem;
+  }
+
+  .top-header nav input {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    min-width: 170px;
+    height: 110px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+  /* Header stacks */
+  .top-header {
+    padding: 15px;
+  }
+
+  .top-header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .top-header nav a {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .top-header nav input {
+    margin: 10px 0 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+}
+
+/* EXTRA SMALL PHONES */
+@media (max-width: 400px) {
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .top-header nav a {
+    font-size: 0.85rem;
+  }
+}
+
+/* Buttons and project page (shared for lua pages) */
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  background: #2a5298;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+/* modern hover: slight lightening, no translation or shadow */
+.btn:hover {
+  filter: brightness(1.10);
+}
+
+.btn:focus {
+  outline: 3px solid rgba(42,82,152,0.18);
+  outline-offset: 2px;
+}
+
+.project-page {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin: 28px 20px;
+}
+
+.project-image img {
+  width: 560px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  display: block;
+}
+
+.project-info {
+  max-width: 560px;
+}
+
+.project-info h1 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.project-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+@media (max-width: 800px) {
+  .project-page {
+    flex-direction: column;
+  }
+  .project-info { max-width: 100%; }
+}

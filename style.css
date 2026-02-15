@@ -131,6 +131,9 @@
   align-items: center;
   justify-content: center;
   transition: 0.25s ease;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .card:hover {
